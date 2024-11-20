@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 68.2%;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333; /* Dark text color for better readability */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600; /* Semi-bold headings */
+    color: #333; /* Dark text color */
+    margin-bottom: 1rem; /* Bottom margin for headings */
+}
+
+p {
+    margin-bottom: 1.5rem; /* Bottom margin for paragraphs */
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem; /* Smaller padding */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 1.6rem; /* Smaller font size */
+    color: #666; /* Medium gray text color */
+    font-weight: 500;
+    margin-left: 2rem; /* Reduced spacing between nav items */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:first-child {
+    margin-left: 0;
+}
+
+.navbar a:hover,
+.navbar a:active {
+    color: #d96226; /* Accent color on hover */
+    transform: scale(1.05); /* Slightly increased size on hover */
+}
+
+.section {
+    padding: 6rem 2rem; /* Smaller padding for sections */
+}
+
+.home {
+    background: url('body_bg.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh; /* Full viewport height */
+}
+
+.home-content {
+    max-width: 600px;
+    color: #fff;
+}
+
+.home-content h1 {
+    font-size: 3.6rem; /* Large font size */
+    margin-bottom: 1.5rem;
+    color: #f5f5f5;
+}
+
+.home-content p {
+    font-size: 1.8rem; /* Increased paragraph font size */
+    margin-bottom: 2rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.order-button {
+    background-color: #d96226; /* Accent color */
+    color: #fff;
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: background 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.order-button:hover {
+    background-color: #b47d3e; /* Darker accent color on hover */
+    transform: scale(1.05); /* Slightly increased size on hover */
+}
+
+.about {
+    padding: 6rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about .titlepage h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.about .titlepage p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.about_img {
+    text-align: center;
+}
+
+.about_img figure img {
+    max-width: 100%;
+}
+
+
+.quality {
+    background: url('body_bg.png') no-repeat center center/cover;
+    padding: 6rem 2rem;
+    
+    text-align: center;
+}
+
+.quality .titlepage h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #be9b84;
+}
+
+.quality .titlepage p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #ded2d2;
+    margin-bottom: 2rem;
+}
+
+.quality .quality-box-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Space between items */
+}
+
+.quality-box {
+    background-color: #fff;
+    height: 262px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50%;
+    width: 262px; /* Ensure fixed size for alignment */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.quality-box:hover {
+    transform: scale(1.05);
+}
+
+.quality-box figure {
+    margin: 0;
+}
+
+.quality-box figure img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.quality-box p {
+    margin-top: 1rem;
+    color: #333;
+    font-size: 1.4rem;
+}
+
+.quality .read_more {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(184, 125, 62);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.quality .read_more:hover {
+    background-color: rgb(145, 106, 61);
+}
+
+
+
+.contact {
+    padding: 6rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact .titlepage h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.main_form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.main_form .contactus,
+.main_form .textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.main_form .textarea {
+    height: 150px; /* Increased height for textarea */
+}
+
+.main_form .send_btn {
+    font-size: 1.6rem;
+    background-color: #d96226;
+    color: #fff;
+    padding: 1rem 2.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.main_form .send_btn:hover {
+    background-color: #b47d3e; /* Darker accent color on hover */
+    transform: scale(1.05); /* Slightly increased size on hover */
+}
+footer {
+    background: url('body_bg.png') no-repeat center center/cover;
+    padding-top: 10px;
+    text-align: center;
+}
+.copyright {
+    margin-top: 60px;
+    padding-bottom: 25px;
+
+}
+
+.copyright p {
+    color: #cec5c5;
+    font-size: 17 px;
+    line-height: 22px;
+    text-align: center;
+    font-weight: 400;
+    font-weight: normal;
+}
+
+.copyright a {
+    color: #fff;
+}
+
+.copyright a:hover {
+    color: #d96226;
+}
